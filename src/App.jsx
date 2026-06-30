@@ -7,7 +7,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    axios.get("http://4.224.186.213/evaluation-service/notifications")
+    axios.get("http://4.224.186.213/evaluation-service/register")
       .then((response) => {
         setUsers(response.data);
       });
